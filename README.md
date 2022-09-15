@@ -19,4 +19,4 @@ Deploy ไฟล์ที่ build โดยใช้บริการ Static w
 
 ดูวิธีการใช้ **Surge** ใน MS TEAM Channel General
 
-https://black-and-white-grass-china-number-one.surge.sh
+https://lab09-xxx-pmodify.surge.sh/lab-07
