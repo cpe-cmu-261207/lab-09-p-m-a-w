@@ -3,7 +3,7 @@ import Todo from "./Todo";
 import React from "react";
 // import { ThemeContext } from "../pages/theme";
 
-export default function Todos() {
+export default function Todolist() {
     const [started, setStarted] = useState(false);
     const [todos, setTodos] = useState([]);
     const [counter, setCounter] = useState({ completed: 0, pending: 0 });
