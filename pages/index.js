@@ -1,3 +1,7 @@
+import { Template } from "../components/Template";
+
 export default function Home() {
-  return <div>You code here</div>;
+  return <Template>
+    <img src="/sonic.jpg" width="200" />
+  </Template>
 }
