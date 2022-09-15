@@ -1,11 +1,52 @@
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Navbar() {
-  return <div className="d-flex justify-content-center gap-5 my-4">
-    <Link href="/"><a href="">Home</a></Link>
-    <Link href="/experience"><a href="">Experience</a></Link>
-    <Link href="/contact"><a href="">Contact</a></Link>
-    <Link href="/lab-07"><a href="">Lab-07</a></Link>
-  </div>;
+  const renderTooltip = (props) => (
+    <Tooltip id="button-tooltip" {...props}>
+    </Tooltip>
+  );
+  return (<div id="navbar">
+    <OverlayTrigger placement="bottom" overlay={<Tooltip>About me</Tooltip>}>
+      <Link href="/">
+        <a
+          href=""
+          style={{ margin: "4px" }}
+        >
+          <i className="fa-solid fa-circle-info"></i>
+        </a>
+      </Link>
+    </OverlayTrigger>
+    <OverlayTrigger placement="bottom" overlay={<Tooltip>Experience</Tooltip>}>
+      <Link href="/experience">
+        <a
+          href=""
+          style={{ margin: '4px' }}
+        >
+          <i className="fa-solid fa-clock-rotate-left"></i>
+        </a>
+      </Link>
+    </OverlayTrigger>
+    <OverlayTrigger placement="bottom" overlay={<Tooltip>Contact</Tooltip>}>
+      <Link href="/contact">
+        <a
+          href=""
+          style={{ margin: '4px' }}
+        >
+          <i className="fa-solid fa-phone"></i>
+        </a>
+      </Link>
+    </OverlayTrigger>
+    <OverlayTrigger placement="bottom" overlay={<Tooltip>Lab-07</Tooltip>}>
+      <Link href="/lab-07">
+        <a
+          href=""
+          style={{ margin: '4px' }}
+        >
+          Lab-07
+        </a>
+      </Link>
+    </OverlayTrigger>
+  </div>);
 }

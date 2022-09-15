@@ -1,0 +1,51 @@
+.gh h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.gh a,
+.gh a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.gh-small {
+    zoom: 0.5;
+}
+
+.gh-medium {
+    zoom: 0.75;
+}
+
+.gh-large {
+    zoom: 1;
+}
+
+.gh-card {
+    font-family: 'Arial';
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    max-width: 300px;
+    display: inline-block;
+    margin: 8px;
+    border-radius: 5px;
+}
+
+.gh-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img.gh {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0% 95%, 0 0);
+}
+
+.container.gh {
+    padding: 16px;
+}
+
+.gh p {
+    line-height: 1.6;
+    margin: 1em 0;
+}
